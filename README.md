@@ -25,7 +25,7 @@ Shows multiple failed authentication attempts during the brute-force simulation.
 
 
 
-![4625 Failed Logins](windows_event4625_failed_logins.png)
+![4625 Failed Logins](windows_event4625_failed_login.png)
 
 
 
