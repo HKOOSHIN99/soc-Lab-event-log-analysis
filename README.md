@@ -13,6 +13,67 @@ This project was a simple lab to simulate failed login attempts on a Windows vir
 I tried multiple incorrect passwords (around 10 attempts) on the Windows login screen over a short period of time to simulate a brute-force scenario.
 
 While doing this, I monitored logs to see what was being generated in real time.
+## Evidence Screenshots
+
+
+
+### Windows failed login attempts (Event ID 4625)
+
+
+
+Shows multiple failed authentication attempts during the brute-force simulation.
+
+
+
+![4625 Failed Logins](windows_event4625_failed_logins.png)
+
+
+
+---
+
+
+
+### Windows failed login details
+
+
+
+Shows username, logon type, and failure reason.
+
+
+
+![4625 Details](windows_event4625_failed_login_details.png)
+
+
+
+---
+
+
+
+### Sysmon process activity (Event ID 1)
+
+
+
+Shows process creation during login (logonui.exe).
+
+
+
+![Sysmon Event 1](sysmon_event1_logonui_process.png)
+
+
+
+---
+
+
+
+### Sysmon registry activity (Event ID 13)
+
+
+
+Shows registry changes to LastLoggedOnUser during authentication.
+
+
+
+![Sysmon Event 13](sysmon_event13_registry_lastloggedonuser.png)
 
 ## What I saw
 
